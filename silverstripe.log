@@ -1,0 +1,19 @@
+[04-Dec-2015 09:55:32] Error at \framework\model\connect\PDOConnector.php line 159: Uncaught PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ (http://localhost/smallworld/)
+[04-Dec-2015 11:16:27] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+SELECT DISTINCT "SiteTree_Live"."ClassName", "SiteTree_Live"."LastEdited", "SiteTree_Live"."Created", "SiteTree_Live"."URLSegment", "SiteTree_Live"."Title", "SiteTree_Live"."MenuTitle", "SiteTree_Live"."Content", "SiteTree_Live"."MetaDescription", "SiteTree_Live"."ExtraMeta", "SiteTree_Live"."ShowInMenus", "SiteTree_Live"."ShowInSearch", "SiteTree_Live"."Sort", "SiteTree_Live"."HasBrokenFile", "SiteTree_Live"."HasBrokenLink", "SiteTree_Live"."ReportClass", "SiteTree_Live"."CanViewType", "SiteTree_Live"."CanEditType", "SiteTree_Live"."Version", "SiteTree_Live"."ParentID", "SiteTree_Live"."ID", 
+			CASE WHEN "SiteTree_Live"."ClassName" IS NOT NULL THEN "SiteTree_Live"."ClassName"
+			ELSE 'SiteTree' END AS "RecordClassName"
+
+FROM "SiteTree_Live"
+
+WHERE ("SiteTree_Live"."URLSegment" = ?)
+ AND ("SiteTree_Live"."ParentID" = ?)
+
+ORDER BY "SiteTree_Live"."Sort" ASC
+
+LIMIT 1
+
+42S02-1932: Table 'fletch_ss_smallworld.sitetree_live' doesn't exist in engine (http://localhost/smallworld/)
+[04-Dec-2015 12:32:04] Error at \framework\control\injector\InjectionCreator.php line 14: Uncaught ReflectionException: Class SiteConfigExtension does not exist (http://localhost/smallworld/dev/build?flush=&flushtoken=804c2629f33dd7a86d26afda8b18c000)
