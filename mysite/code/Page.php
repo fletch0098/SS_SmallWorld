@@ -36,7 +36,7 @@ class Page_Controller extends ContentController {
 		//<!-- Google Web Font -->
 		Requirements::css("http://fonts.googleapis.com/css?family=Raleway:300,500,900%7COpen+Sans:400,700,400italic");
 
-		Requirements::css($this->ThemeDir()."font-awesome/css/font-awesome.min.css");
+		Requirements::css($this->ThemeDir()."/font-awesome/css/font-awesome.min.css");
 
 		//<!-- Bootstrap CSS -->
 		Requirements::css($this->ThemeDir()."/css/bootstrap.min.css");
